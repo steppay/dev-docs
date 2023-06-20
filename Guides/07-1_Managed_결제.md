@@ -98,11 +98,11 @@ document.querySelector("#myIframe").src = url;
 https://가맹점.com/success?order_id=${order_id}&order_code=${order_code}&status=${status}
 ```
 
-| property   | 타입     | 설명               |
-|------------|--------|------------------|
-| order_id   | Int    | 스텝페이 주문 ID       |
-| order_code | String | 스텝페이 주문 코드       |
-| status     | String | 결제 결과 (“success” | “error”) |
+| property   | 타입     | 설명                         |
+|------------|--------|----------------------------|
+| order_id   | Int    | 스텝페이 주문 ID                 |
+| order_code | String | 스텝페이 주문 코드                 |
+| status     | String | 결제 결과 (“success”, “error”) |
 
 ### Step3: 결제 검증
 
