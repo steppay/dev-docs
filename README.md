@@ -1,9 +1,10 @@
 # 개발 문서 관리
 
 # History
-|버전|설명|개정 이력|
-|---|---|---|
-|0.1|최초 작성|2023.06.16|
+| 버전    | 설명        | 개정 이력      |
+|-------|-----------|------------|
+| 0.0.1 | 최초 작성     | 2023.06.16 |
+| 0.1.0 | 개발 가이드 적용 | 2023.06.21 |
 
 # TODO
 
@@ -14,3 +15,5 @@
 
 # Reference
 - [Stripe 결제](https://stripe.com/docs/payments)
+- [Stripe API](https://stripe.com/docs/api/customers)
+- [Paddle API](https://developer.paddle.com/api-reference/1384a288aca7a-api-reference)
