@@ -3,7 +3,7 @@
 관리형(Managed) 결제는 결제 페이지 부터 스케쥴링, 구독, 배송 등의 서비스를 제공해주는 결제 서비스입니다.
 구독에 대한 관리형 결제에서는 최초 결제 프로세스와 갱신 결제 프로세스를 구분하여 설명합니다.
 
-![managed_paymnet_type.png](../images/07_결제/managed_paymnet_type.png)
+![managed_paymnet_type.png](https://dev-vercel-dev-steppaykr.vercel.app/api/localize?dir=07_payment&name=managed_paymnet_type.png)
 
 ## 연관 가이드
 
@@ -14,7 +14,7 @@
 ## 사전 준비 작업
 
 관리형 결제를 위해서는 다음의 과정을 거쳐 결제 URL을 생성할 수 있습니다.
-![managed_payment_flow.png](../images/07_결제/managed_payment_flow.png)
+![process.png](https://dev-vercel-dev-steppaykr.vercel.app/api/localize?dir=0_guide&name=process.png)
 
 - [Secret-Token 확인하기](./01_인증.md#1-secret-token)
 - 주문이 생성되어 있어야 합니다.
@@ -25,7 +25,7 @@
 최초 결제는 단건 또는 구독 상품의 첫 결제를 의미합니다. 최초 결제는 4가지 흐름으로 진행됩니다.
 
 ### 최초 결제 단계
-![initial_payment.png](../images/07_결제/initial_payment.png)
+![initial_payment.png](https://dev-vercel-dev-steppaykr.vercel.app/api/localize?dir=07_payment&name=initial_payment.png)
 
 `STEP 1` 연동하려는 페이지에서 스텝페이 결제 화면을 표시합니다.
 
@@ -178,7 +178,7 @@ axios.request(config)
 스텝페이에서 구독 갱신이 성공하면 주문 웹훅을 통해 결과를 전달합니다. 
 구독 상품을 이용하는 경우 주문 웹훅을 등록해야 실시간으로 결제 성공 이벤트를 받아보실 수 있습니다.
 
-![recurring_payment.png](../images/07_결제/recurring_payment.png)
+![recurring_payment.png](https://dev-vercel-dev-steppaykr.vercel.app/api/localize?dir=07_payment&name=recurring_payment.png)
 
 
 ### 정기 결제 단계

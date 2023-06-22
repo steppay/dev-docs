@@ -26,7 +26,7 @@
 
 빌링 결제는 빌링키를 이용한 결제로 사용자 인증 없이 결제를 시킬 수 있습니다. 해당 빌링키는 최초 결제에서 결제수단이 XXX_BILL (CARD_BILL, CMS_BILL) 인 경우에만 빌링키가 발급됩니다.
 
-![setting_sdk.png](../images/09_SDKs/setting_sdk.png)
+![setting_sdk.png](https://dev-vercel-dev-steppaykr.vercel.app/api/localize?dir=09_SDKs&name=setting_sdk.png)
 
 ```bash
 curl --location 'https://api.steppay.kr/api/payment/billing' \
