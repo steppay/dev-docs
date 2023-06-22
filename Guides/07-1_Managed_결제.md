@@ -78,8 +78,8 @@ let params = {
 };
 let url = new URL(`https://api.steppay.kr/api/public/orders/${orderCode}/pay`);
 url.search = new URLSearchParams(params).toString();
-// iframe 안의 값을 수정합니다.
-document.querySelector("#myIframe").src = url; 
+document.querySelector("#myIframe").src = url;
+// Modifies the value inside the iframe.
 // This will load the URL in the iframe
 ```
 
@@ -95,7 +95,7 @@ document.querySelector("#myIframe").src = url;
 `successUrl` 또는 `errorUrl`은 아래와 같은 형식입니다.
 
 ```text
-https://가맹점.com/success?order_id=${order_id}&order_code=${order_code}&status=${status}
+https://{partner-domain}.com/success?order_id=${order_id}&order_code=${order_code}&status=${status}
 ```
 
 | property   | 타입     | 설명                         |
@@ -115,10 +115,10 @@ https://가맹점.com/success?order_id=${order_id}&order_code=${order_code}&stat
 ```jsx
 <script>
 document.querySelector("#myButton").addEventListener("click", function() {
-		// step2 에서 추출한 '추가 파라미터'
+        // 'Additional parameters' extracted from step2
 		var params = new URLSearchParams(window.location.search);
     
-    fetch('결제 검증 API URL', {
+    fetch('Payment verification API URL', {
         method: 'POST',
 				headers: {
 			    "Content-Type": "application/json",
@@ -131,7 +131,7 @@ document.querySelector("#myButton").addEventListener("click", function() {
     })
     .then(response => response.json())
     .then(data => {
-        // 결제 완료 또는 결제 실패 데이터 표시
+        // Show payment completed or failed payment data
     })
     .catch((error) => {
       console.error('Error:', error);
@@ -156,14 +156,14 @@ let config = {
 axios.request(config)
 .then((response) => {
 	const receiptResponse = JSON.stringify(response.data);
-	// status 가 성공이면
+    // If status is successful
 	if(status == "success" && receiptResponse.paymentDate !== null) {
-		// do some logic
+		// Do some logic
 	}else {
 		// something went wrong
 	}
 	if(status == "error" && receiptResponse.paymentStatus == null) {
-		// do some logic
+		// Do some logic
 	}else {
 		// something went wrong
 	}

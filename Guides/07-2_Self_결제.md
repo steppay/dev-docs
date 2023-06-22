@@ -33,33 +33,33 @@ curl --location 'https://api.steppay.kr/api/payment/billing' \
 --header 'Secret-Token: ${Secret Token}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-    "idKey": "${빌링키가 생성된 결제의 IDKEY}",
+    "idKey": "${IDKEY of the payment where the billing key was created}",
     "partner": {
-        "partnerOrderId" : `${가맹점이 관리하는 주문번호}`,
-        "partnerUserId": `${가맹점이 관리하는 고객번호}`
+        "partnerOrderId" : `${Order number managed by the partner}`,
+        "partnerUserId": `${Customer number managed by the partner}`
     },
     "product" : {
-          "itemName" : `${가맹점이 관리하는 상품이름}`,
-          "amount" : `${결제되어야 할 금액}`,
-          "quantity" : `${총 수량}`
+          "itemName" : `${Product name managed by the partner}`,
+          "amount" : `${Amount to be paid}`,
+          "quantity" : `${Total quantity}`
     },
     "customer" : {
-          "userName" : `${가맹점이 관리하는 고객 이름}`,
-          "phone" : `${가맹점이 관리하는 고객 휴대폰번호}`,
-          "email" : `${가맹점이 관리하는 고객 이메일}`
+          "userName" : `${Customer name managed by the partner}`,
+          "phone" : `${Customer phone number managed by the partner}`,
+          "email" : `${Customer email managed by the partner}`
     }
 }'
 ```
 
-### 환불 하기
+### 환불하기
 
 ```bash
 curl --location 'https://api.steppay.kr/api/internal/payment/cancel' \
 --header 'Secret-Key: ${Secret Token}' \
 --header 'Content-Type: application/json' \
 --data '{
-    "idKey": "${취소하고자 하는 결제건의 IDKEY}",
-    "requestPrice": "${환불 금액}"
+    "idKey": "${IDKEY of the payment transaction you want to cancel}",
+    "requestPrice": "${Refund amount}"
 }'
 ```
 
