@@ -2,7 +2,7 @@
 stoplight-id: mkl28d9swmo2s
 ---
 
-# 08-3\_Webhook-Schema
+# Webhook-Schema
 
 웹훅을 통해 보내지는 데이터의 프로퍼티 'data'에는 'Schema'가 포함됩니다. 각각의 이벤트에는 해당 이벤트에 맞는 스키마가 사용됩니다. [Webhook Events](https://docs.steppay.kr/docs/webhook-events)에서 각각의 이벤트에 맞는 스키마를 확인하실 수 있습니다. 또한 API 버전에 따라 스키마가 달라질 수 있습니다.
 
