@@ -1,5 +1,5 @@
 ---
-stoplight-id: 5vc1c85oncuck
+stoplight-id: 8c62975656385
 ---
 
 # 관리형(Managed) 결제 가이드

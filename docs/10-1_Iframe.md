@@ -1,3 +1,7 @@
+---
+stoplight-id: 15062b549023b
+---
+
 # Iframe 가이드
 
 ## Iframe 호출 URL 및 파라미터

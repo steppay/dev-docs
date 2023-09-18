@@ -1,5 +1,5 @@
 ---
-stoplight-id: abddao4nyvapv
+stoplight-id: 3ecd8f585e39a
 ---
 
 # 비관리형(Self) 결제 가이드
