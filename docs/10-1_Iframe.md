@@ -1,5 +1,5 @@
 ---
-stoplight-id: 15062b549023b
+stoplight-id: ocsivi0swo6qk
 ---
 
 # Iframe 가이드

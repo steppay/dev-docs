@@ -1,5 +1,5 @@
 ---
-stoplight-id: nedxfqwuz1mo9
+stoplight-id: oq1uku3n52qax
 ---
 
 # Webhook-Schema
