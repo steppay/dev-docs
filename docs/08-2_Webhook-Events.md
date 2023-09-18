@@ -2,7 +2,7 @@
 stoplight-id: 34u8qdbatw02i
 ---
 
-# 08-2\_Webhook-Events
+# Webhook-Events
 
 스텝페이가 제공하고 있는 웹훅 이벤트 목록입니다. 도메인 별로 구분되며, 각 이벤트 별로 이벤트 타입과 스키마가 결정됩니다. 스키마는 수신받게 될 object 내에 `data` 프로퍼티와 매칭됩니다.
 
