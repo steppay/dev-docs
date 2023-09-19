@@ -3,9 +3,9 @@ stoplight-id: oq1uku3n52qax
 ---
 
 # Webhook-Schema
-'웹훅 v2'에서 제공되는 Schema 목록입니다.
+['웹훅 v2'](https://docs.develop.steppay.kr/docs/guide/har8c97gh696g-webhook-v2)에서 제공되는 Schema 목록입니다.
 
-웹훅을 통해 보내지는 데이터의 프로퍼티 'data'에는 'Schema'가 포함됩니다. 각각의 이벤트에는 해당 이벤트에 맞는 스키마가 사용됩니다. [Webhook Events](https://docs.steppay.kr/docs/webhook-events)에서 각각의 이벤트에 맞는 스키마를 확인하실 수 있습니다. 또한 API 버전에 따라 스키마가 달라질 수 있습니다.
+웹훅을 통해 보내지는 데이터의 프로퍼티 'data'에는 'Schema'가 포함됩니다. 각각의 이벤트에는 해당 이벤트에 맞는 스키마가 사용됩니다. [Webhook Events](https://docs.develop.steppay.kr/docs/guide/eo1f40yz545ad-webhook-events)에서 각각의 이벤트에 맞는 스키마를 확인하실 수 있습니다. 또한 API 버전에 따라 스키마가 달라질 수 있습니다.
 
 ## Schema
 
