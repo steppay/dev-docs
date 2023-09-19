@@ -7,20 +7,21 @@ stoplight-id: ulwq2kcokkbf0
 관리형(Managed) 결제는 결제 페이지 부터 스케쥴링, 구독, 배송 등의 서비스를 제공해주는 결제 서비스입니다.
 구독에 대한 관리형 결제에서는 최초 결제 프로세스와 갱신 결제 프로세스를 구분하여 설명합니다.
 
-![managed_paymnet_type.png](https://docs-image-translator-qpz5cerjg-steppay.vercel.app/api/localize?dir=07_payment&name=managed_paymnet_type.png)
+<img src="https://docs-image-translator-qpz5cerjg-steppay.vercel.app/api/localize?dir=07_payment&name=managed_paymnet_type.png" width="80%">
 
 ## 연관 가이드
 
-- [인증 가이드](./01_인증.md)
-- [주문 가이드](./05_주문.md)
-- [구독 가이드](./06_구독..md)
+- [인증 가이드](https://steppay.stoplight.io/docs/guide/urvjmavys1lar-)
+- [주문 가이드](https://steppay.stoplight.io/docs/guide/jash7i7rudebo-)
+- [구독 가이드](https://steppay.stoplight.io/docs/guide/ah2bzz8utfpfn-)
 
 ## 사전 준비 작업
 
 관리형 결제를 위해서는 다음의 과정을 거쳐 결제 URL을 생성할 수 있습니다.
-![process.png](https://docs-image-translator-qpz5cerjg-steppay.vercel.app/api/localize?dir=0_guide&name=process.png)
 
-- [Secret-Token 확인하기](./01_인증.md#1-secret-token)
+<img src="https://docs-image-translator-qpz5cerjg-steppay.vercel.app/api/localize?dir=0_guide&name=process.png" width="90%">
+
+- [Secret-Token 확인하기](https://steppay.stoplight.io/docs/guide/urvjmavys1lar-#1-secret-token)
 - 주문이 생성되어 있어야 합니다.
     - 주문 생성 API의 Response에 `orderCode`를 확인하여 `orderCode`로 결제 URL요청이 가능합니다.
     - 주문 생성 API의 Response에 `idKey`를 확인하여 `idKey`로 결제 조회가 가능합니다.
@@ -86,6 +87,8 @@ document.querySelector("#myIframe").src = url;
 // Modifies the value inside the iframe.
 // This will load the URL in the iframe
 ```
+
+</br>
 
 | property   | 타입     | 설명                                          |
 |------------|--------|---------------------------------------------|
@@ -191,3 +194,5 @@ axios.request(config)
 2. 갱신 성공 시 주문 웹훅을 전송합니다.
 3. 주문 웹훅이 올바른지 검증하기 위해 주문 조회 API를 요청합니다.
 4. 응답받은 주문 조회 결과로 전달받은 주문 웹훅을 검증합니다.
+
+</br>
