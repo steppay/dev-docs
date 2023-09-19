@@ -7,7 +7,7 @@ stoplight-id: ulwq2kcokkbf0
 관리형(Managed) 결제는 결제 페이지 부터 스케쥴링, 구독, 배송 등의 서비스를 제공해주는 결제 서비스입니다.
 구독에 대한 관리형 결제에서는 최초 결제 프로세스와 갱신 결제 프로세스를 구분하여 설명합니다.
 
-<img src="https://docs-image-translator-qpz5cerjg-steppay.vercel.app/api/localize?dir=07_payment&name=managed_paymnet_type.png" width="80%">
+<img src="https://docs-image-translator-steppay.vercel.app/api/localize?dir=07_payment&name=managed_paymnet_type.png" width="80%" style="display: block; margin: 0 auto; transition: none;">
 
 ## 연관 가이드
 
@@ -19,7 +19,7 @@ stoplight-id: ulwq2kcokkbf0
 
 관리형 결제를 위해서는 다음의 과정을 거쳐 결제 URL을 생성할 수 있습니다.
 
-<img src="https://docs-image-translator-qpz5cerjg-steppay.vercel.app/api/localize?dir=0_guide&name=process.png" width="90%">
+<img src="https://docs-image-translator-steppay.vercel.app/api/localize?dir=0_guide&name=process.png" width="90%" style="display: block; margin: 0 auto; padding: 10px; transition: none;">
 
 - [Secret-Token 확인하기](https://steppay.stoplight.io/docs/guide/urvjmavys1lar-#1-secret-token)
 - 주문이 생성되어 있어야 합니다.
@@ -30,7 +30,7 @@ stoplight-id: ulwq2kcokkbf0
 최초 결제는 단건 또는 구독 상품의 첫 결제를 의미합니다. 최초 결제는 4가지 흐름으로 진행됩니다.
 
 ### 최초 결제 단계
-![initial_payment.png](https://docs-image-translator-qpz5cerjg-steppay.vercel.app/api/localize?dir=07_payment&name=initial_payment.png)
+![initial_payment.png](https://docs-image-translator-steppay.vercel.app/api/localize?dir=07_payment&name=initial_payment.png)
 
 `STEP 1` 연동하려는 페이지에서 스텝페이 결제 화면을 표시합니다.
 
@@ -185,7 +185,7 @@ axios.request(config)
 스텝페이에서 구독 갱신이 성공하면 주문 웹훅을 통해 결과를 전달합니다. 
 구독 상품을 이용하는 경우 주문 웹훅을 등록해야 실시간으로 결제 성공 이벤트를 받아보실 수 있습니다.
 
-![recurring_payment.png](https://docs-image-translator-qpz5cerjg-steppay.vercel.app/api/localize?dir=07_payment&name=recurring_payment.png)
+![recurring_payment.png](https://docs-image-translator-steppay.vercel.app/api/localize?dir=07_payment&name=recurring_payment.png)
 
 
 ### 정기 결제 단계

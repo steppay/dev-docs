@@ -33,7 +33,7 @@ https://cover.steppay.kr/#/recovery-complete/?token=1234abcd&paymentDate=2021-11
 https://cover.steppay.kr/#/change-date/?token=1234abcd
 ```
 
-- token: 복구 토큰 -> 복구 정보를 가져와서 표시합니다.
+- `token`: 복구 토큰 -> 복구 정보를 가져와서 표시합니다.
 - `token`: 복구 토큰 (복구 정보를 가져와서 표시합니다.)
 
 ### 결제일 변경 완료
