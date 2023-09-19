@@ -1,5 +1,5 @@
 {
-  "collapseTableOfContents": true,
+  "collapseTableOfContents": false,
   "items": [
     {
       "type": "item",
@@ -85,7 +85,7 @@
         {
           "type": "item",
           "title": "Webhook V2",
-          "uri": "/docs/08-1_웹훅_v2.md",
+          "uri": "/docs/08-1_웹훅_v2.md"
         },
         {
           "type": "item",
