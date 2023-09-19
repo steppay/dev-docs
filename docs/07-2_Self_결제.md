@@ -1,5 +1,6 @@
 ---
 stoplight-id: i1redpq1cgevl
+internal: true
 ---
 
 # 비관리형(Self) 결제 가이드
@@ -9,12 +10,12 @@ stoplight-id: i1redpq1cgevl
 
 ## 연관 가이드
 
-- [인증 가이드](./01_인증.md)
-- [결제 SDK 가이드](./09-2_결제_SDK.md#결제-sdk)
+- [인증 가이드](./01\_인증.md)
+- [결제 SDK 가이드](./09-2\_결제\_SDK.md#결제-sdk)
 
 ## 사전 준비 작업
 
-- 스텝페이 포탈에서 [PG 설정](./07-0_결제.md#사전-준비-작업)을 통해 사용하고자 하는 PG가 설정되어 있어야 합니다.
+- 스텝페이 포탈에서 [PG 설정](./07-0\_결제.md#사전-준비-작업)을 통해 사용하고자 하는 PG가 설정되어 있어야 합니다.
 
 ### 최초 결제 하기
 
@@ -74,18 +75,16 @@ curl --location 'https://api.steppay.kr/api/internal/payment/cancel' \
 ### 요청 형식
 
 | HTTP Method       | POST                                                 |
-|-------------------|------------------------------------------------------|
+| ----------------- | ---------------------------------------------------- |
 | Content-Type 선택가능 | application/json,  application/x-www-form-urlencoded |
-
 
 ### 웹훅 본문
 
-| Feild  | Type   | Required | Description |
-|--------|--------|----------|------------|
-| webHookType     | String   | 필수       | 웹훅 타입       |
-| orderId     | Long   | 필수       | 주문 번호      |
-| idKey | String | 필수       | 결제 idKey      |
-
+| Feild       | Type   | Required | Description |
+| ----------- | ------ | -------- | ----------- |
+| webHookType | String | 필수       | 웹훅 타입       |
+| orderId     | Long   | 필수       | 주문 번호       |
+| idKey       | String | 필수       | 결제 idKey    |
 
 ```json
 {
@@ -98,7 +97,7 @@ curl --location 'https://api.steppay.kr/api/internal/payment/cancel' \
 #### 웹훅 타입
 
 | 상태                   | 설명                                   |
-|----------------------|--------------------------------------|
+| -------------------- | ------------------------------------ |
 | PAYMENT              | 결제 완료                                |
 | VBANK                | 가상계좌 발급 완료                           |
 | CANCELED             | 결제 취소 완료                             |
