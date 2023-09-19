@@ -17,7 +17,7 @@
       "uri": "/docs/03_상품.md"
     },
     {
-      "type": "item",
+      "type": "group",
       "title": "가격 플랜 가이드",
       "uri": "/docs/04-0_가격플랜.md",
       "items": [
@@ -44,7 +44,7 @@
       "uri": "/docs/05_주문.md"
     },
     {
-      "type": "item",
+      "type": "group",
       "title": "구독 가이드",
       "uri": "/docs/06_구독..md",
       "items": [
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "type": "item",
+      "type": "group",
       "title": "결제 가이드",
       "uri": "/docs/07-0_결제.md",
       "items": [
@@ -78,7 +78,7 @@
       ]
     },
     {
-      "type": "item",
+      "type": "group",
       "title": "웹훅 가이드",
       "uri": "/docs/08_웹훅.md",
       "items": [
@@ -89,12 +89,12 @@
         },
         {
           "type": "item",
-          "title": "Webhook-Events",
+          "title": "Webhook Events",
           "uri": "/docs/08-2_Webhook-Events.md"
         },
         {
           "type": "item",
-          "title": "Webhook-Schema",
+          "title": "Webhook Schema",
           "uri": "/docs/08-3_Webhook-Schema.md"
         },
         {
