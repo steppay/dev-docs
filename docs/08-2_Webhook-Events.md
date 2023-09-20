@@ -53,9 +53,9 @@ stoplight-id: eo1f40yz545ad
 
 | 이벤트      | 이벤트 타입                | Schema                                                         |
 | :------- | :-------------------- | :------------------------------------------------------------- |
-| 상품 생성    | product.created       | [Product](https://docs.develop.steppay.kr/docs/guide/oq1uku3n52qax-webhook-schemaproduct) |
-| 상품 수정    | product.updated       | [Product](https://docs.develop.steppay.kr/docs/guide/oq1uku3n52qax-webhook-schemaproduct) |
-| 상품 삭제    | product.deleted       | [Product](https://docs.develop.steppay.kr/docs/guide/oq1uku3n52qax-webhook-schemaproduct) |
+| 상품 생성    | product.created       | [Product](https://docs.develop.steppay.kr/docs/guide/oq1uku3n52qax-webhook-schema#product) |
+| 상품 수정    | product.updated       | [Product](https://docs.develop.steppay.kr/docs/guide/oq1uku3n52qax-webhook-schema#product) |
+| 상품 삭제    | product.deleted       | [Product](https://docs.develop.steppay.kr/docs/guide/oq1uku3n52qax-webhook-schema#product) |
 | 가격 플랜 생성 | product.price.created | [Price](https://docs.develop.steppay.kr/docs/guide/oq1uku3n52qax-webhook-schema#price)     |
 | 가격 플랜 수정 | product.price.updated | [Price](https://docs.develop.steppay.kr/docs/guide/oq1uku3n52qax-webhook-schema#price)     |
 | 가격 플랜 삭제 | product.price.deleted | [Price](https://docs.develop.steppay.kr/docs/guide/oq1uku3n52qax-webhook-schema#price)     |
