@@ -94,7 +94,7 @@ document.querySelector("#myIframe").src = url;
 |------------|--------|---------------------------------------------|
 | successUrl | String | 결제 성공 시 Redirect URL                        |
 | errorUrl   | String | 결제 실패 시 Redirect URL                        |
-| orderCode  | String | [주문 생성 API](./05_주문.md)로 생성된 orderCode      |
+| orderCode  | String | [주문 생성 API](https://docs.develop.steppay.kr/docs/api-reference/ndffp3zkcambr-)로 생성된 orderCode      |
 
 ### Step2: 결제화면 Callback 처리
 
