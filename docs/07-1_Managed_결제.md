@@ -7,21 +7,21 @@ stoplight-id: ulwq2kcokkbf0
 관리형(Managed) 결제는 결제 페이지 부터 스케쥴링, 구독, 배송 등의 서비스를 제공해주는 결제 서비스입니다.
 구독에 대한 관리형 결제에서는 최초 결제 프로세스와 갱신 결제 프로세스를 구분하여 설명합니다.
 
-<img src="https://docs-image-translator-steppay.vercel.app/api/localize?dir=07_payment&name=managed_paymnet_type.png" width="80%" style="display: block; margin: 0 auto; transition: none;">
+<img src="https://docs-image-translator-steppay.vercel.app/api/localize?dir=07_payment&name=managed_paymnet_type.png" width="70%" style="display: block; margin: 0 auto; transition: none;">
 
 ## 연관 가이드
 
-- [인증 가이드](https://steppay.stoplight.io/docs/guide/urvjmavys1lar-)
-- [주문 가이드](https://steppay.stoplight.io/docs/guide/jash7i7rudebo-)
-- [구독 가이드](https://steppay.stoplight.io/docs/guide/ah2bzz8utfpfn-)
+- [인증 가이드](https://docs.develop.steppay.kr/docs/guide/urvjmavys1lar-)
+- [주문 가이드](https://docs.develop.steppay.kr/docs/guide/jash7i7rudebo-)
+- [구독 가이드](https://docs.develop.steppay.kr/docs/guide/3fho91a9pl1bs-)
 
 ## 사전 준비 작업
 
 관리형 결제를 위해서는 다음의 과정을 거쳐 결제 URL을 생성할 수 있습니다.
 
-<img src="https://docs-image-translator-steppay.vercel.app/api/localize?dir=0_guide&name=process.png" width="90%" style="display: block; margin: 0 auto; padding: 10px; transition: none;">
+<img src="https://docs-image-translator-steppay.vercel.app/api/localize?dir=0_guide&name=process.png" width="80%" style="display: block; margin: 0 auto; padding: 10px; transition: none;">
 
-- [Secret-Token 확인하기](https://steppay.stoplight.io/docs/guide/urvjmavys1lar-#1-secret-token)
+- [Secret-Token 확인하기](https://docs.develop.steppay.kr/docs/guide/urvjmavys1lar-#1-secret-token)
 - 주문이 생성되어 있어야 합니다.
     - 주문 생성 API의 Response에 `orderCode`를 확인하여 `orderCode`로 결제 URL요청이 가능합니다.
     - 주문 생성 API의 Response에 `idKey`를 확인하여 `idKey`로 결제 조회가 가능합니다.
@@ -114,7 +114,7 @@ https://{partner-domain}.com/success?order_id=${order_id}&order_code=${order_cod
 ### Step3: 결제 검증
 
 화면에서 발생한 Redirection이 스텝페이의 결제화면에서 리다이렉션됐는지 확인할 수 있는 결제 검증 API를 개발합니다.
-결제 응답의 Query String에 포함된 `order_code`를 사용해서 [주문 조회 API](https://docs.steppay.kr/reference/getorderdetail)를 호출합니다.
+결제 응답의 Query String에 포함된 `order_code`를 사용해서 [주문 조회 API](https://docs.develop.steppay.kr/docs/api-reference/knup8adkdiv9i-)를 호출합니다.
 주문 조회 API의 응답값에 `paymentDate` 프로퍼티 값이 null 이 아닌 경우 결제가 정상적으로 완료되었음을 확인할 수 있습니다. 
 
 #### 검증 API 호출 예시
