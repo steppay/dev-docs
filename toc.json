@@ -83,19 +83,21 @@
       "uri": "/docs/08_웹훅.md",
       "items": [
         {
-          "type": "item",
+          "type": "group",
           "title": "Webhook V2",
-          "uri": "/docs/08-1_웹훅_v2.md"
-        },
-        {
-          "type": "item",
-          "title": "Webhook Events",
-          "uri": "/docs/08-2_Webhook-Events.md"
-        },
-        {
-          "type": "item",
-          "title": "Webhook Schema",
-          "uri": "/docs/08-3_Webhook-Schema.md"
+          "uri": "/docs/08-1_웹훅_v2.md",
+          "items": [
+            {
+              "type": "item",
+              "title": "Webhook Events",
+              "uri": "/docs/08-2_Webhook-Events.md"
+            },
+            {
+              "type": "item",
+              "title": "Webhook Schema",
+              "uri": "/docs/08-3_Webhook-Schema.md"
+            }
+          ]
         },
         {
           "type": "item",
