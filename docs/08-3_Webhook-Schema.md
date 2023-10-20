@@ -236,9 +236,10 @@ stoplight-id: oq1uku3n52qax
 | idKey            | String      | 결제 정보 조회용 idKey                    | No       |
 | orderId          | String      | 주문 번호 (paymentOnly = true 일때는 가맹점의 주문 번호) | Yes      |
 | customerId       | String      | 주문 번호 (paymentOnly = true 일때는 가맹점의 고객 번호) | Yes      |
-| productName      | String      | 결제 상품 명                              | Yes      |
-| paidAmount       | Decimal     | 결제 금액                                 | Yes      |
-| paidAt           | LocalDateTime | 결제 일시                               | Yes      |
+| payer            | Payer       | 결제자 정보 (하단 참조)                               | Yes      |
+| productName      | String      | 결제 상품명                                         | Yes      |
+| paidAmount       | Decimal     | 결제 금액                                          | Yes      |
+| paidAt           | LocalDateTime | 결제 일시                                        | Yes      |
 | status           | String      | 결제 상태<br/>(허용 값)<br/>- STANDBY: 대기중<br/>- COMPLETE: 완료<br/>- CANCELED: 취소됨<br/>- PARTIAL_CANCELED: 부분 취소됨<br/>- USER_CANCELED: 사용자에 의해 취소됨<br/>- CANCELED_FAIL: 취소 실패<br/>- FAILED: 실패<br/>- VIRTUAL_BANK_STANDBY: 가상계좌 대기중<br/>- CMS_STANDBY: CMS 대기중 | No       |
 | paymentGateway   | String      | 결제 PG<br/>(허용 값)<br/>- DANAL: 다날<br/>- KAKAO: 카카오페이<br/>- KG: KG이니시스<br/>- NICE: 나이스페이<br/>- GOOGLE: 구글플레이<br/>- BANKPAY (deprecated, "뱅크페이"로 변경된 BLUE_WALNUT을 사용하세요.): 뱅크페이<br/>- BLUEWALNUT: 블루월넛<br/>- KSNET: KSNET<br/>- TOSS: 토스<br/>- EXIMBAY: 엑심베이<br/>- SETTLE: 세틀뱅크<br/>- NICE_V2: 나이스페이 v2<br/>- STRIPE: 스트라이프<br/>- PAYPLE: 페이플<br/>- PAYPLE_GLOBAL: 페이플 글로벌<br/>- UNKNOWN: 알 수 없음 | No       |
 | paymentMethod    | String      | 결제 수단<br/>(허용 값)<br/>- CARD: 신용카드<br/>- VBANK: 가상계좌<br/>- BANK: 계좌이체<br/>- CELLPHONE: 휴대폰 결제<br/>- SIMPLE_PAY: 간편결제<br/>- CMS: 통장결제<br/>- CARD_BILL: 신용카드 빌링<br/>- CELLPHONE_BILL: 휴대폰 결제 빌링<br/>- CMS_BILL: 통장결제 빌링 | No       |
@@ -248,6 +249,13 @@ stoplight-id: oq1uku3n52qax
 | vBank            | VBank       | (하단 참조)                               | Yes      |
 | niceCms          | NiceCms     | (하단 참조)                               | Yes      |
 
+- **Payer** `payer`필드에는 `Payer`객체가 포함됩니다. 이 객체의 구조는 다음과 같습니다.
+
+  | 변수명           | 타입            | 설명          | Nullable |
+  | ------------- | ------------- | ------------- | -------- |
+  | userName      | String        | 결제자 명       | Yes      |
+  | email         | String        | 결제자 이메일    | Yes       |
+  | phone         | String        | 결제자 휴대폰번호 | Yes       |
 
 - **VBank**
 
