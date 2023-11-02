@@ -101,7 +101,7 @@
         },
         {
           "type": "item",
-          "title": "Webhook V1",
+          "title": "Webhook V1 (deprecated)",
           "uri": "/docs/08-4_웹훅-v1.md"
         }
       ]
