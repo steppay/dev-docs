@@ -94,7 +94,7 @@ document.querySelector("#myIframe").src = url;
 |------------|--------|---------------------------------------------|
 | successUrl | String | 결제 성공 시 Redirect URL                        |
 | errorUrl   | String | 결제 실패 시 Redirect URL                        |
-| orderCode  | String | [주문 생성 API](https://docs.develop.steppay.kr/docs/api/mopoq2ivh7trq-)로 생성된 orderCode      |
+| orderCode  | String | '주문 생성 API'로 생성된 orderCode      |
 
 ### Step2: 결제화면 Callback 처리
 
@@ -114,8 +114,8 @@ https://{partner-domain}.com/success?order_id=${order_id}&order_code=${order_cod
 ### Step3: 결제 검증
 
 화면에서 발생한 Redirection이 스텝페이의 결제화면에서 리다이렉션됐는지 확인할 수 있는 결제 검증 API를 개발합니다.
-결제 응답의 Query String에 포함된 `order_code`를 사용해서 [주문 조회 API](https://docs.develop.steppay.kr/docs/api/9j1l5azkkdxcp-)를 호출합니다.
-주문 조회 API의 응답값에 `paymentDate` 프로퍼티 값이 null 이 아닌 경우 결제가 정상적으로 완료되었음을 확인할 수 있습니다. 
+결제 응답의 Query String에 포함된 `order_code`를 사용해서 '주문 조회 API'를 호출합니다.  
+'주문 조회 API'의 응답값에 `paymentDate` 프로퍼티 값이 null 이 아닌 경우 결제가 정상적으로 완료되었음을 확인할 수 있습니다. 
 
 #### 검증 API 호출 예시
 
