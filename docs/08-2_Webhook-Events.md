@@ -14,6 +14,7 @@ stoplight-id: eo1f40yz545ad
 | ----- | ------------- | ---------------------------------------------------------- |
 | 주문 생성 | order.created | [Order](https://docs.develop.steppay.kr/docs/guide/oq1uku3n52qax-webhook-schema#order) |
 | 주문 변경 | order.updated | [Order](https://docs.develop.steppay.kr/docs/guide/oq1uku3n52qax-webhook-schema#order) |
+| 주문 결제 성공 | order.payment_completed | [Order](https://docs.develop.steppay.kr/docs/guide/oq1uku3n52qax-webhook-schema#order) |
 
 ### 구독
 
