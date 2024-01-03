@@ -26,10 +26,50 @@ stoplight-id: ulwq2kcokkbf0
     - 주문 생성 API의 Response에 `orderCode`를 확인하여 `orderCode`로 결제 URL요청이 가능합니다.
     - 주문 생성 API의 Response에 `idKey`를 확인하여 `idKey`로 결제 조회가 가능합니다.
 
-## 최초 결제
-최초 결제는 단건 또는 구독 상품의 첫 결제를 의미합니다. 최초 결제는 4가지 흐름으로 진행됩니다.
 
-### 최초 결제 단계
+## 최초 결제
+최초 결제는 단건 또는 구독 상품의 첫 결제를 의미합니다. 최초 결제를 위해서는 결제 링크 또는 결제창 연동이 필요하니다.
+
+### 1) 결제 링크
+
+<!-- theme: success -->
+> **주문 생성 후, 주문 코드로 결제 링크를 생성할 수 있습니다.**
+> `https://api.steppay.kr/api/public/orders/${order_code}/pay`
+
+- Request
+  ```jsx
+  curl --request GET \
+       --url 'https://api.steppay.kr/api/v1/orders/order_1234/pay?successUrl=https%3A%2F%2Fportal.steppay.kr%2F' \
+       --header 'Secret-Token: {Secret-Token}' \
+       --header 'accept: */*'
+  ```
+
+  **Query params**
+    - successUrl: 결제 성공시 해당 주소로 리다이렉트 됩니다.
+    - errorUrl: 결제 실패/에러 발생 시 해당 주소로 리다이렉트 됩니다.
+    - cancelUrl: 결제 취소(결제창을 닫았을 경우)시 해당 주소로 리다이렉트 됩니다.
+
+- Response
+
+| 상태   | 정의          |
+|------|-------------|
+|  302 | 결제링크로 리다이렉트 |
+|  404 | 정보를 찾지 못함   |
+
+#### 결제 링크 생성 예시
+전달된 파라미터로 결제 결과가 전달될 때 주문 코드가 파라미터로 전달됩니다.  
+결제 요청 url이 다음과 같다고 가정하겠습니다.
+
+`https://api.steppay.kr/api/public/orders/order_1234/pay?successUrl=https://{your-site.com}`
+
+- 결제 성공 결과는 `https://{your-site.com}?order_code=order_1234&status=success`로 전달됩니다.
+- `order_code`는 주문 코드를 나타내며, `status`는 결제의 성공 여부를 나타냅니다.
+- `order_code`는 [주문 상세 조회 API](https://docs.develop.steppay.kr/docs/api/9j1l5azkkdxcp-)를 통해 확인할 수 있습니다.
+
+
+### 2) 결제창 연동
+
+결제창 연동은 다음과 같은 4가지 흐름으로 진행됩니다.
 ![initial_payment.png](https://docs-image-translator-steppay.vercel.app/api/localize?dir=07_payment&name=initial_payment.png)
 
 `STEP 1` 연동하려는 페이지에서 스텝페이 결제 화면을 표시합니다.
