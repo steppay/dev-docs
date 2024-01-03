@@ -45,18 +45,6 @@
     },
     {
       "type": "group",
-      "title": "구독 가이드",
-      "uri": "/docs/06_구독.md",
-      "items": [
-        {
-          "type": "item",
-          "title": "구독 매니저 SDK 가이드",
-          "uri": "/docs/09-1_구독매니저_SDK.md"
-        }
-      ]
-    },
-    {
-      "type": "group",
       "title": "결제 가이드",
       "uri": "/docs/07-0_결제.md",
       "items": [
@@ -74,6 +62,18 @@
           "type": "item",
           "title": "결제 SDK 가이드",
           "uri": "/docs/09-2_결제_SDK.md"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "title": "구독 가이드",
+      "uri": "/docs/06_구독.md",
+      "items": [
+        {
+          "type": "item",
+          "title": "구독 매니저 SDK 가이드",
+          "uri": "/docs/09-1_구독매니저_SDK.md"
         }
       ]
     },
