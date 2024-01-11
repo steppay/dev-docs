@@ -478,3 +478,19 @@ stoplight-id: oq1uku3n52qax
   | ----------- | ------ | ----------- | -------- |
   | productCode | String | 상품 코드       | Yes      |
   | priceCode   | String | 플랜 코드       | Yes      |
+
+
+
+### Cover
+
+tag: <span style="color:#3898ff;">`애드온:스텝커버`</span>
+
+| 변수명              | 타입             | 설명                                                 | NULLABLE |
+|---------------------|------------------|--------------------------------------------------|----------|
+| id                  | Long             | 커버 번호                                          | No       |
+| customerId          | String           | 고객 번호 (paymentOnly = true 일때는 가맹점의 주문 번호) | No       |
+| orderId             | String           | 주문 아이디(paymentOnly = true 일때는 가맹점의 주문 번호) | No       |
+| subscriptionId      | String           | 구독 아이디                                        | No       |
+| nextRetryDatetime   | LocalDateTime    | 다음 결제 일시 (결제일 변경했을 시, 있는 값)              | Yes      |
+| messageType         | String           | 메시지 타입<br><br>-REMIND: 결제 안내<br>-DATE_CHANGED: 결제일 변경<br>-PAUSED: 커버 종료     | Yes      |
+| messageSentStep     | Int              | 현재 메세지 전송 횟수                                | Yes      |
