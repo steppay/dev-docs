@@ -61,5 +61,14 @@ stoplight-id: eo1f40yz545ad
 | 가격 플랜 수정 | product.price.updated | [Price](https://docs.develop.steppay.kr/docs/guide/oq1uku3n52qax-webhook-schema#price)     |
 | 가격 플랜 삭제 | product.price.deleted | [Price](https://docs.develop.steppay.kr/docs/guide/oq1uku3n52qax-webhook-schema#price)     |
 
+### 애드온:스텝커버
+| 이벤트      | 이벤트 타입                | Schema                                                         |
+| :------- | :-------------------- | :------------------------------------------------------------- |
+| 커버 알림 발송    | cover.sent_message       | [Product](https://docs.develop.steppay.kr/docs/guide/oq1uku3n52qax-webhook-schema#cover) |
+| 커버 알림 나중에 받기    | cover.delayed_message       | [Product](https://docs.develop.steppay.kr/docs/guide/oq1uku3n52qax-webhook-schema#cover) |
+| 커버 결제일 변경    | cover.changed_payment_date       | [Product](https://docs.develop.steppay.kr/docs/guide/oq1uku3n52qax-webhook-schema#cover) |
+| 커버 만기    | cover.paused       | [Product](https://docs.develop.steppay.kr/docs/guide/oq1uku3n52qax-webhook-schema#cover) |
+
+
 </br>
 
