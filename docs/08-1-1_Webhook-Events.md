@@ -1,5 +1,6 @@
 ---
-stoplight-id: eo1f40yz545ad
+stoplight-id: g4brex8minptc
+tags: [webhook]
 ---
 
 # Webhook-Events

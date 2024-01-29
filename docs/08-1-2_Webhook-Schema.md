@@ -1,5 +1,6 @@
 ---
-stoplight-id: oq1uku3n52qax
+stoplight-id: fioxeabxny8hf
+tags: [webhook]
 ---
 
 # Webhook-Schema
