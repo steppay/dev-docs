@@ -1,6 +1,5 @@
 ---
 stoplight-id: g4brex8minptc
-tags: [webhook]
 ---
 
 # Webhook-Events

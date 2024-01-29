@@ -1,6 +1,5 @@
 ---
 stoplight-id: fioxeabxny8hf
-tags: [webhook]
 ---
 
 # Webhook-Schema
