@@ -90,12 +90,12 @@
             {
               "type": "item",
               "title": "Webhook Events",
-              "uri": "/docs/08-2_Webhook-Events.md"
+              "uri": "/docs/08-1-1_Webhook-Events.md"
             },
             {
               "type": "item",
               "title": "Webhook Schema",
-              "uri": "/docs/08-3_Webhook-Schema.md"
+              "uri": "/docs/08-1-2_Webhook-Schema.md"
             }
           ]
         },
