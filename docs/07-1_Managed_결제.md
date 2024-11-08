@@ -109,8 +109,9 @@ let params = {
 };
 let url = new URL(`https://api.steppay.kr/api/public/orders/${orderCode}/pay`);
 url.search = new URLSearchParams(params).toString();
-// New Tab or New Popup
-window.open(url, "_blank");
+
+// 팝업 또는 새 탭 열기 
+window.open(url, "_blank", "noopener");
 ```
         
 #### 3. Iframe
