@@ -96,6 +96,11 @@
               "type": "item",
               "title": "Webhook Schema",
               "uri": "/docs/08-1-2_Webhook-Schema.md"
+            },
+            {
+              "type": "item",
+              "title": "Webhook 검증 (Signature)",
+              "uri": "/docs/08-1-3_Signature.md"
             }
           ]
         },
