@@ -15,7 +15,7 @@ stoplight-id: 1lr84j5dj2qyx
 
 서명 검증을 위해 필요한 검증 키를 Steppay 포탈에서 확인할 수 있습니다.
 
-1. **[포탈 > 설정 > 결제 설정 > 웹훅 설정](https://portal.steppay.kr/setting/webhook)**으로 이동합니다.
+1. [**포탈 > 설정 > 결제 설정 > 웹훅 설정**](https://portal.steppay.kr/setting/webhook)으로 이동합니다.
 2. 검증하고자 하는 웹훅의 상세 페이지에 들어갑니다.
 3. 상세 페이지에서 "검증 KEY"를 복사합니다.
 
@@ -47,12 +47,13 @@ timestamp=1706002316,key=BMFfPB/HjnZeJrwA4wC1csUDzkINZsaExF99X3/Q9phE=
 
 ### 4. 헤더의 서명 값과 암호화 결과 비교하기
 
-```
-timestamp=1706002316,key=BMFfPB/HjnZeJrwA4wC1csUDzkINZsaExF99X3/Q9phE=;H3uZhieE19k/eF3ARNwjeQhdrJErf8Z8THV108mnC9w=
-```
-
 1. 인코딩된 결과값을 **`Steppay-Signature`** 헤더의 **`key`** 값과 비교합니다.
     - 헤더의 **`key`** 값이 여러 개일 경우 **`;`** 로 구분되며, 모든 **`key`** 값 중 하나라도 인코딩된 값과 일치하면 검증이 성공합니다.
+
+> 헤더의 **`key`** 값이 여러 개일 경우 예시
+> ```
+> timestamp=1706002316,key=BMFfPB/HjnZeJrwA4wC1csUDzkINZsaExF99X3/Q9phE=;H3uZhieE19k/eF3ARNwjeQhdrJErf8Z8THV108mnC9w=
+> ```
 
 ## 검증 코드
 
@@ -110,8 +111,8 @@ timestamp=1706002316,key=BMFfPB/HjnZeJrwA4wC1csUDzkINZsaExF99X3/Q9phE=;H3uZhieE1
 - Kotlin
     
     > 검증에 지속적으로 실패할 경우
-    
-    <aside> ⚠️ 만약 요청을 클래스로 받았을 때, 클래스를 문자열로 변환하는 방식에 따라 의도한대로 문자열 변환이 되지 않을 수 있습니다. 만약 검증 과정에서 지속적으로 문제가 생긴다면, 처음부터 데이터를 `String` 형태로 받는 것이 더 나을 수 있습니다.
+    >
+    > 만약 요청을 클래스로 받았을 때, 클래스를 문자열로 변환하는 방식에 따라 의도한대로 문자열 변환이 되지 않을 수 있습니다. 만약 검증 과정에서 지속적으로 문제가 생긴다면, 처음부터 데이터를 `String` 형태로 받는 것이 더 나을 수 있습니다.
     
     </aside>
     
