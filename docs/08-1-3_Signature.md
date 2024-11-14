@@ -1,6 +1,5 @@
 ---
 stoplight-id: 1lr84j5dj2qyx
-internal: true
 ---
 
 # Webhook 검증 (Signature)
